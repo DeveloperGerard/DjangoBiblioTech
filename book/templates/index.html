@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for libro in libros %}
+
+
+        <h1>{{libro.titulo}}</h1>
+        <p>
+            {{libro.autor}}
+            {{libro.categoria}}
+            {{libro.precio_prestamo}}
+            {{libro.stock_copias}}
+            {{libro.disponible}}
+        </p>
+        <br>
+
+    {% endfor %}
+</body>
+</html>
